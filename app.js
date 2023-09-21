@@ -12,18 +12,26 @@ let func =  async ()=>{
     if(temp.data.weather[0].id>= 200 && temp.data.weather[0].id<=232){//thunderstorm
         source.src = "./thunderstorm.mp4";
         video.load();
+        let main = document.querySelector("main");
+        main.style.color = "black";
     }else if(temp.data.weather[0].id>= 300 && temp.data.weather[0].id<=321){//drizzle
         source.src = "./rain.mp4";
         video.load();
+        let main = document.querySelector("main");
+        main.style.color = "black";
     }
     else if(temp.data.weather[0].id>= 500 && temp.data.weather[0].id<=531){//rain
         source.src = "./rain.mp4";
         video.load();
+        let main = document.querySelector("main");
+        main.style.color = "black";
     }
     else if(temp.data.weather[0].id>= 600 && temp.data.weather[0].id<=622){//snow
         source.src = "./video_of_snowfall (Original).mp4";
         source.type = "video/mp4";
         video.load();
+        let main = document.querySelector("main");
+        main.style.color = "black";
     }
     else if(temp.data.weather[0].id>= 701 && temp.data.weather[0].id<=780){//atmosphere
         source.src = "./storm-16160.mp4";
@@ -35,9 +43,13 @@ let func =  async ()=>{
     else if(temp.data.weather[0].id == 800){
         source.src = "./clear.mp4"
         video.load();
+        let main = document.querySelector("main");
+        main.style.color = "black";
     }else{
         source.src = "./video (2160p).mp4"
         video.load();
+        let main = document.querySelector("main");
+        main.style.color = "black";
     }
     let currTemp = document.querySelector(".temp");
     currTemp.innerText = `${Math.floor(temp.data.main.temp-273.15)}°C`;
