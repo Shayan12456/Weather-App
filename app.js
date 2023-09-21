@@ -35,6 +35,9 @@ let func =  async ()=>{
     else if(temp.data.weather[0].id == 800){
         source.src = "./clear.mp4"
         video.load();
+    }else{
+        source.src = "./video (2160p).mp4"
+        video.load();
     }
     let currTemp = document.querySelector(".temp");
     currTemp.innerText = `${Math.floor(temp.data.main.temp-273.15)}°C`;
