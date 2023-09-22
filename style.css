@@ -1,14 +1,4 @@
 nav{
-    /* display: flex;
-    justify-content: space-between;
-    background-color: #000;
-    color: #fff;
-    /* animation: airflow 120s linear infinite; */
-    /* position: sticky; */
-    /* right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%; */ 
     display: flex;
     justify-content: space-between;
     background-color: #000;
@@ -144,5 +134,10 @@ button{
 
     }
   } 
+    @media(max-height: 1024px){
+    .temp-details{
+        margin-bottom: 256px;
+    }
+  }    
 
 
