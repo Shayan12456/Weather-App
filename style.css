@@ -144,10 +144,15 @@ button{
 
     }
   } 
-  @media(max-height: 1024px){
+  @media((min-height: 1024px) and (min-width:768px)){
     .temp-details{
         margin-bottom: 256px;
     }
   }    
+  @media((min-height: 1180px) and (min-width:820px)){
+    .temp-details{
+        margin-bottom: 256px;
+    }
+  }   
 
 

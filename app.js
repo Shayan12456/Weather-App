@@ -31,7 +31,7 @@ let func =  async ()=>{
         source.type = "video/mp4";
         video.load();
         let main = document.querySelector("main");
-        main.style.color = "black";
+        main.style.color = "white";
     }
     else if(temp.data.weather[0].id>= 701 && temp.data.weather[0].id<=780){//atmosphere
         source.src = "./storm-16160.mp4";
